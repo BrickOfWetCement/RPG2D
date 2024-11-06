@@ -1,6 +1,9 @@
 
 using UnityEngine;
 
+
+
+
 public class PlayerMovement : MonoBehaviour
 {
 
@@ -20,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private Transform groundCheck;      // Ground check position
     public float groundCheckRadius = 0.2f; // Radius for checking ground
 
-    private LayerMask groundLayer;      // Layer used to detect ground
+    public LayerMask groundLayer;      // Layer used to detect ground
 
 
 
@@ -54,8 +57,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-       
-            // Check if the player is grounded and handle jumping logic
+
+        // Check if the player is grounded and handle jumping logic
+
+        
             isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
             //Debug.Log("isGrounded=" + isGrounded);
