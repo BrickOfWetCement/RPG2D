@@ -21,7 +21,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: ''
   m_Sprite:
     fileID: 21300024
-    guid: 22511a56c2784f57a98c759b35bd1982
+    guid: cda54d35d45249cdabc677f06547abfd
     type: 3
   m_Color:
     r: 1
